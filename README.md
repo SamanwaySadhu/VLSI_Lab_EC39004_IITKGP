@@ -1,1 +1,1 @@
-# VLSI_Lab_EC39004_IITKGP
+Simply cloning the .v files won't work on your system. Get some later versions of Xilinx ISE installed in your PC, make a module giving inputs/outputs referring to the .v file and then copy-paste the function body.
