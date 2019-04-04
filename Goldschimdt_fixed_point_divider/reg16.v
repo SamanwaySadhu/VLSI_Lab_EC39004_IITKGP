@@ -22,7 +22,7 @@ module reg16(
     input [15:0]D,
     input clk,
     input reset,
-    output reg [15:0]Q
+    output [15:0]Q
     );
 
 dff d00(D[0],clk,reset,Q[0]);
