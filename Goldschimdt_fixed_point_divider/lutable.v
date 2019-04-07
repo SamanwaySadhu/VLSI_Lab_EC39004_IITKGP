@@ -57,37 +57,4 @@ always @(D) begin
 	endcase
 end
 
-always @(D) begin
-	casex(D)
-		16'b011xxxxxxxxxxxxx : C=4'b0001;
-		16'b010xxxxxxxxxxxxx : C=4'b0001;
-		16'b0011xxxxxxxxxxxx : C=4'b0010;
-		16'b0010xxxxxxxxxxxx : C=4'b0010;
-		16'b00011xxxxxxxxxxx : C=4'b0011;
-		16'b00010xxxxxxxxxxx : C=4'b0011;
-		16'b000011xxxxxxxxxx : C=4'b0100;
-		16'b000010xxxxxxxxxx : C=4'b0100;
-		16'b0000011xxxxxxxxx : C=4'b0101;
-		16'b0000010xxxxxxxxx : C=4'b0101;
-		16'b00000011xxxxxxxx : C=4'b0110;
-		16'b00000010xxxxxxxx : C=4'b0110;
-		16'b000000011xxxxxxx : C=4'b0111;
-		16'b000000010xxxxxxx : C=4'b0111;
-		16'b0000000011xxxxxx : C=4'b1000;
-		16'b0000000010xxxxxx : C=4'b1000;
-		16'b00000000011xxxxx : C=4'b1001;
-		16'b00000000010xxxxx : C=4'b1001;
-		16'b000000000011xxxx : C=4'b1010;
-		16'b000000000010xxxx : C=4'b1010;
-		16'b0000000000011xxx : C=4'b1011;
-		16'b0000000000010xxx : C=4'b1011;
-		16'b00000000000011xx : C=4'b1100;
-		16'b00000000000010xx : C=4'b1100;
-		16'b000000000000011x : C=4'b1101;
-		16'b000000000000010x : C=4'b1101;
-		16'b000000000000001x : C=4'b1110;
-		default : C=4'b0000;
-	endcase
-end
-
 endmodule
